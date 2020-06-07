@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Prescrição</title>
+    <meta name="viewport" content="height=device, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="javascripts/prescricao.js"></script>
+</head>
+<div class="container">
+    <div class="navbar">
+        <a href="index.html"><img src="images/home.png">Página Inicial</a>
+        <a onClick="abrirMembros()"><img src="images/candidatura.png">Candidatura Membro</a>
+        <a href="prescritores.html"><img src="images/prescritores.png">Prescritores</a>
+        <a href="associacoes.html"><img src="images/associacoes.png">Associações</a>
+        <a href="fornecedores.html"><img src="images/fornecedores.png">Fornecedores</a>
+        <a href="configurarpop.html"><img src="images/configurarpop.png">Configurar POP</a>
+        <a href="configurarsistema.html"><img src="images/configurarsis.png">Configurar Sistema</a>
+    </div>
+    <div class="nota">
+        Na página da prescrição é demonstrado todo o diagnóstico do procedimento escolhido na página inicial, ao nível dos produtos de apoio e outros.
+       </div>
+    <div class=contentP>
+        <div class=prescricaoPOP>
+            Pop
+            <select id="PatologiaPOP" onchange="atualizarTabela(this.value)">
+
+            </select>
+
+        </div>
+        <div class="DP" id="DP">
+        </div>
+
+        <div class="Recomendacoes">
+            Recomendações Local de Trabalho
+            <div class="tabelas">
+            <table id="tablePreco">
+                <tr>
+                    <th id="tipoCima"></th>
+                    <th id="descricaoCima"></th>
+                    <th id="isoCima"></th>
+                    <th id="adaptacaoCima"></th>
+                    <th id="beneficiosCima"></th>
+                    <th id="colmatacaoCimaR">Σ</th>
+                    <th id="precoCimaR">Σ</th>
+                    <th id="requesitosCima"></th>
+                    <th id="scrollCima"></th>
+                </tr>
+            </table>
+            <table id="tableRP">
+                <tr>
+                    <th id="colTipoR">Tipo</th>
+                    <th id="colDescricaoR">Descrição</th>
+                    <th id="colIsoR">ISO/Ref.</th>
+                    <th id="colAdaptacaoR">Adaptação</th>
+                    <th id="colBeneficiosR">Beneficios</th>
+                    <th id="colColmatacaoR">Colmatação</th>
+                    <th id="colPrecoR">Custo</th>
+                    <th id="colRequisitosR">Requisitos</th>
+                    <th id="colScrollR"></th>
+                </tr>
+
+
+            </table>
+        </div>
+    </div>
+
+        <div class="Produtos">
+            Produtos de Apoio
+            <div class="tabelas">
+                <table id="tablePreco">
+                    <tr>
+                        <th id="tipoCima"></th>
+                        <th id="descricaoCima"></th>
+                        <th id="isoCima"></th>
+                        <th id="adaptacaoCima"></th>
+                        <th id="beneficiosCima"></th>
+                        <th id="colmatacaoCimaP">Σ</th>
+                        <th id="precoCimaP">Σ</th>
+                        <th id="requesitosCima"></th>
+                        <th id="scrollCima"></th>
+                    </tr>
+                </table>
+                <table id="tableRProdutos">
+                    <tr>
+                        <th id="colTipoP">Tipo</th>
+                        <th id="colDescricaoP">Descrição</th>
+                        <th id="colIsoP">ISO/Ref.</th>
+                        <th id="colAdaptacaoP">Adaptação</th>
+                        <th id="colBeneficiosP">Beneficios</th>
+                        <th id="colColmatacaoP">Colmatação</th>
+                        <th id="colPrecoP">Custo</th>
+                        <th id="colRequisitosP">Requisitos</th>
+                        <th id="colScrollP"></th>
+                    </tr>
+                    
+    
+                </table>
+            </div>
+        </div>
+        <div class="Informacoes">
+            Informações Adicionais
+            <div class="Add">
+                <a href=""><img src="images/attach.png">Regulamentação SAPA</a>
+                <a href=""><img src="images/pdf.png">Sistema de Atribuição de Produtos de Apoio</a>
+                <a href=""><img src="images/attach.png">Atestado Médico de Incapacidade Multiuso</a>
+                <a href=""><img src="images/pdf.png">Guia Prático - Prestação Social Para a Inclusão</a>
+            </div>
+            </div>
+
+
+            <div class="criarCodigo">
+                <input type="button" id="criarCodigo" value="Criar Código Ref.">
+            </div>
+    <div class="Imprimir">
+    <input type="button" id="imprimir" value="Imprimir">
+    </div>
+        
+</div>
+</div>
+</html>
+
+<div class="hover_bkgr_fricc">
+    <span class="helper"></span>
+    <div class="pop">
+        <div class="popupCloseButton" onClick="fecharPop()">&times;</div>
+        <div class="tituloPop">
+            Novo Membro
+        </div >
+        <div class="dadosPop">Tipo de Entidade <img src="images/adicionar.png"><br>
+            <select id="EntidadeId">
+            <option>
+                Fornecedores
+            </option>
+            <option>
+                Associações
+            </option>
+            <option>
+                Prescritores/Avaliadores
+            </option>
+        </select>
+        </div>
+        <div class="nomesPop">Nome <br>
+            <input type="text" id="nomePop">
+        </div>
+        <div class="descricaoPop">Descrição<br>
+        <textarea class="areaPop"></textarea>
+        <div class="emailPop">Email 
+            <input type="text" id="nomePop">
+        </div>
+        <div class="contatoPop">Contato Telefónico 
+            <input type="text" id="contatoTextoPop">
+        </div>
+
+        <div class="urlPop">URL do Site
+            <input type="text" id="contatoTextoPop">
+        </div>
+        <input type="button" id="registar" value="Registar">
+    </div>
+    </div>
+    <input type="button" id="registar" value="Registar">
+</div>

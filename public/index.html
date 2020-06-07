@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="height=device, initial-scale=1.0">
+    <title>Diagnóstico Online</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="javascripts/index.js"></script>
+ 
+
+</head>
+<body>
+<div class="container">
+    <div class="navbar" >
+        <a class="navactive" href="index.html"><img src="images/home.png">Página Inicial</a>
+        <a onClick="abrirMembros()"><img src="images/candidatura.png">Candidatura Membro</a>
+        <a href="prescritores.html"><img src="images/prescritores.png">Prescritores</a>
+        <a href="associacoes.html"><img src="images/associacoes.png">Associações</a>
+        <a href="fornecedores.html"><img src="images/fornecedores.png">Fornecedores</a>
+        <a href="configurarpop.html"><img src="images/configurarpop.png">Configurar POP</a>
+        <a href="configurarsistema.html"><img src="images/configurarsis.png">Configurar Sistema</a>
+    </div>
+    <div class="nota">
+        Na Página Inicial faz-se um diagnóstico das patologias, sintomas, tarefas e determina-se posteriormente os procedimentos para o utilizador usufruir.
+       </div>
+    <div class=content>
+        <div class="referencia">
+            Código Ref
+            <input type="text" id="cod">
+            <input type="button" id="Confirmar" value="OK">
+           
+        </div>
+
+        <div class="Patologia">
+          Patologia
+           <select id="PatologiaId" onchange="adicionarPat(this.value)">
+            
+          </select>
+          <img onClick="addLinha()" src="images/adicionar.png">
+        </div>
+        
+        <div class="tabelaPatologia" >
+            <table class="patTabela"  id="patEscolhidas">
+                <tr>
+                  <th id="Sintomas">Patologia/Sintoma Predominante</th>
+                  <th id="Descricao">Descrição </th>
+                  <th id="Codigo"><img src="images/portugal.png"></th>
+                  <th id="Confirmar"></th>
+                </tr> 
+            </table>
+        </div> 
+        
+    
+        <div class="dadosdem">
+            Dados Demográficos
+            <table id="dados">
+                <tr>
+                    <th id="DataCampo"> Data de Nascimento</th>
+                    <th id="caixaTexto"> <input type="date" id="data" ></th>
+                    <th id="espaco"></th>
+                    <th id="generoCampo">Género  </th>
+                    <th id="generoCombo"> <select id="GeneroComboId">
+                        
+                      </select></th>
+                  </tr>
+                  <tr>
+                    <td>Habilitações</td>
+                    <td><select id="Habilitacoes">
+                      </select></td>
+                      <td></td>
+                    <td>Localidade</td>
+                    <td><select id="Localidade">
+                      </select></td>
+                      <tr></tr>
+                    <td>Setor Atividade</td>
+                    <td><select id="setorAtividade" onchange="preencherFuncao()">
+                       
+                      </select></td>
+                      <td></td>
+                    <td>Função</td>
+                    <td><select id="Funcao">
+                    </select></td>
+                </tr>
+               </tr>
+            </table>
+              
+
+           
+
+
+        </div>
+        <div class="PCSintomas">
+            Palavras-Chave Sintomas
+            <div class="chips chips-initial"></div>
+            <input type="button" value="Lista Sintomas" id="lsintomas" onClick="listarSintomas()">
+            <div class="SintomasEscolhidos" id="areaSintomas">
+                
+            </div>
+            <div class="textoSintomas" >
+                <input id="sintomas">
+            </div>
+        </div>
+
+        <div class="PCTarefas">
+            Palavras-Chave Tarefas
+            <div class="chips chips-initial"></div>
+            <input type="button" value="Lista Tarefas" id="ltarefas" onClick="listarTarefas()">
+          
+            <div class="TarefasEscolhidos" id="areaTarefas">
+                
+            </div>
+            <div class="textoTarefas">
+                <input id="tarefas">
+            </div>
+        </div>
+        <div class="determinarPOP">
+            <input type="button" onClick="determinarPOP()" id="determinarpop" value="Determinar POP">
+        </div>
+
+        <div class="POP" id="POP">
+            
+        Lista de Procedimentos Operacionais Padrão    
+        <div class="grau" id="grau">
+           
+        </div>
+            <div class="tabelaPOP">
+
+                    <table id="ListaPOP">
+                <tr>
+                    <th id="Conformidade">% Conformidade</th>
+                    <th id="POPTable">POP</th>
+                    <th id="Colmatacao">% Colmatação</th>
+                    <th id="Custo">Custo Estimado</th>
+                    <th id="Scroll"></th>
+                </tr>
+                
+              </table>
+            </div>
+            <input type="button" class="VerResultados" value="Ver Resultados" onClick="verResultados()">
+
+           </div>
+        </div>
+        </div>
+    
+     
+
+
+</div>
+</body>
+</html>
+
+    
+<div class="hover_bkgr_fricc">
+    <span class="helper"></span>
+    <div class="pop">
+        <div class="popupCloseButton" onClick="fecharPop()">&times;</div>
+        <div class="tituloPop">
+            Novo Membro
+        </div >
+        <div class="dadosPop">Tipo de Entidade <img src="images/adicionar.png"><br>
+            <select id="EntidadeId">
+            <option>
+                Fornecedores
+            </option>
+            <option>
+                Associações
+            </option>
+            <option>
+                Prescritores/Avaliadores
+            </option>
+        </select>
+        </div>
+        <div class="nomesPop">Nome <br>
+            <input type="text" id="nomePop">
+        </div>
+        <div class="descricaoPop">Descrição<br>
+        <textarea class="areaPop"></textarea>
+        <div class="emailPop">Email 
+            <input type="text" id="nomePop">
+        </div>
+        <div class="contatoPop">Contato Telefónico 
+            <input type="text" id="contatoTextoPop">
+        </div>
+
+        <div class="urlPop">URL do Site
+            <input type="text" id="contatoTextoPop">
+        </div>
+        <input type="button" id="registar" value="Registar">
+    </div>
+    </div>
+    <input type="button" id="registar" value="Registar">
+</div>

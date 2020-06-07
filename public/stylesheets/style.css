@@ -1,0 +1,1941 @@
+.navbar{
+    width: 6%;
+    height:100%;
+    position:fixed;
+    margin-left:0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#87afd3;
+
+}
+
+
+.navbar a{
+    text-align:center;
+    padding-top:16%;
+    padding-bottom:16%;
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+color:white;
+text-decoration:none;
+font-family:"Arial";
+font-size:12px;
+margin:auto;
+
+
+}
+
+
+
+.navbar a img{
+    max-width:50%;
+}
+
+.navbar a.navactive {
+    background-color: #647E9D;
+  }
+
+
+  body
+  {
+    background-color:#E8EAEC;
+    overflow-x:hidden;
+  }
+.container
+{
+    width:100%;
+    min-height:100%;
+    top:0px;
+}
+.content
+{
+    float: left;
+    position: relative;
+    margin-left:15%;
+}
+
+.nota{
+    background-color:black;
+    color:white;
+    font-family:"Arial";    
+    text-align:center;
+    float:left;
+    position:relative;
+    width:95.5%;
+    margin-left:5%;
+
+}
+.tabelaPatologia
+{
+    overflow-y: auto;
+    max-height:120px;
+    width:83.5%;
+    margin-left:0.5%;
+}
+
+.Patologia
+{
+    margin-top:2%;
+    margin-left:4%;
+    font-family:"Arial"; 
+    font-size:18px;
+    font-weight: bold;  
+   
+
+}
+
+.Patologia img{
+    margin-right:16.5%;
+    height: 28px;
+    vertical-align:bottom;
+    float:right;
+    
+}
+#lixo
+{
+    text-align:center;
+}
+.Patologia th img
+{
+    text-align:center;
+}
+.Patologia select{
+    height:28px;
+    width:65%;
+    font-size:16px;
+    background-color:#87afd3;
+    margin-left:5.5%;
+    font-weight: normal;
+    color:white;
+
+}
+
+.ComboBoxNula
+{
+    background-color:rgb(30,144,255);
+}
+.tabelaPatologia table
+{
+ 
+    margin-left:4%;
+    margin-top:1%;
+    font-family: Arial;
+    font-size: 14px;
+    border-spacing: 0;
+
+}
+
+.tabelaPatologia table #Sintomas
+{
+    width: 30%;
+}
+
+.tabelaPatologia img
+{
+    width:30%;
+    padding:0 0 0 0 ;
+}
+.tabelaPatologia table #Codigo
+{
+    width: 10%;
+    
+}
+
+.tabelaPatologia table th{
+   padding-top: 3px;
+   padding-bottom: 3px;
+    text-align: left;
+    color: white;
+    background-color: darkgrey;
+    border: 1px solid black;
+    text-align:center;
+    font-weight: normal;
+}
+
+.tabelaPatologia table td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    color: black;
+    background-color: white;
+    border:1px solid black;
+ 
+}
+
+.dadosdem{
+    margin-top:2%;
+    margin-left:4%;
+    font-family:"Arial"; 
+    font-size:18px;
+    font-weight: bold;
+   
+}
+
+#dados{
+    font-size:14px;
+    width: 85%;
+    font-family:"Arial"; 
+    text-align:left;
+    font-weight: normal;
+    
+    
+}
+
+#dados input
+{
+    background-color:#87afd3;
+    font-size:14px;
+    color:white;
+    width:95%;
+    font-family:"Arial";
+
+
+}
+
+#dados select
+{
+    width:95%;
+    font-family:"Arial"; 
+
+    background-color:#87afd3;
+    font-size:14px;
+    color:white;
+    font-weight: normal;
+}
+
+#DataCampo
+{
+    width:15%;
+    font-weight: normal;
+}
+
+#caixaTexto
+{
+    width:35%;
+    font-weight: normal;
+}
+
+#generoCampo{
+    width:10%;
+    font-weight: normal;
+}
+
+#generoCombo
+{
+    width:35%;
+    font-weight: normal;
+}
+#espaco
+{
+    width:5%;
+    font-weight: normal;
+}
+
+.PCSintomas
+{
+    
+    margin-top:2%;
+    margin-left:4%;
+    font-family:"Arial"; 
+    font-size:18px;
+    font-weight: bold;
+    
+   
+}
+
+.PCSintomas input{
+    float:right;
+    margin-right:17%;
+    font-family:"Arial"; 
+    font-size:14px;
+    background-color:#3C61A5;
+    color:white;
+    width:200px;
+    height:26px;
+}
+
+.PCTarefas
+{
+    
+    margin-top:4%;
+    margin-left:4%;
+    font-family:"Arial"; 
+    font-size:18px;
+    font-weight: bold;
+    
+   
+}
+
+.PCTarefas input{
+    float:right;
+    margin-right:17%;
+    font-family:"Arial"; 
+    font-size:14px;
+    background-color:#3C61A5;
+    color:white;
+    width:200px;
+    margin-top:auto;
+}
+
+
+.POP
+{
+    display:none;
+    float:right;
+    margin-top:1%;
+    font-family:"Arial"; 
+    font-size:18px;
+    font-weight: bold;
+    width:82%;
+    margin-right:13.9%;   
+}
+.POP table
+{
+    width: 100%;
+    margin-top:2%;
+    font-family: Arial;
+    font-size: 14px;
+    border-spacing: 0;
+   
+}
+
+.POP table th{
+   padding-top: 3px;
+   padding-bottom: 3px;
+    text-align: left;
+    color: white;
+    background-color: darkgrey;
+    border: 1px solid black;
+    text-align:center;
+    font-weight: normal;
+}
+
+
+
+.POP table td{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    color: black;
+    background-color: white;
+    border:1px solid black;
+    text-align:center;
+
+}
+
+.POP table #Conformidade
+{
+    width:17%;
+}
+
+.POP table #POPTable
+{
+    width:45%;
+}
+
+.POP table #Colmatacao
+{
+    width:17%;
+}
+
+.POP table #Custo
+{
+    width:15%;
+}
+
+.POP table #Scroll
+{
+    width:5%;
+}
+
+.POP input[type='checkbox']
+{
+    width:50%;
+}
+
+.POP input[type='button']{
+    float:right;
+    margin-right:3.2%;
+    font-family:"Arial"; 
+    font-size:14px;
+    background-color:#3C61A5;
+    color:white;
+    width:200px;
+    height:26px;
+
+}
+.tabelaPOP
+{
+    overflow-y: scroll;
+    max-height:200px;
+   width:97.2%;
+   margin-top:2%;
+}
+
+.determinarPOP input
+{
+    margin-top:1%;
+    float:right;
+    margin-right:16.4%;
+    font-family:"Arial"; 
+    font-size:14px;
+    background-color:#3C61A5;
+    color:white;
+    width:200px;
+    height:26px;
+   
+}
+
+.grau
+{
+    margin-right:3.1%;
+    float:right;
+    width:200px;
+    background-color: white;
+    text-align:center;
+    border:1px solid black;
+  
+
+}
+
+.textoTarefas input
+{
+    margin-top:2px;
+    width:83%;
+    height:30px;
+    background-color: #E8EAEC;
+    border-bottom: 2px solid #3C61A5;
+    border-top: 0px;
+    border-left:0px;
+    border-right:0px;
+    color:black;
+
+}
+
+.textoSintomas input
+{
+    margin-top:2px;
+    width:83%;
+    height:30px;
+    background-color: #E8EAEC;
+    color:black;
+    border-bottom: 2px solid #3C61A5;
+    border-top: 0px;
+    border-left:0px;
+    border-right:0px;
+
+}
+
+.VerResultados
+{
+    margin-top:1%;
+    margin-bottom:1%;
+}
+
+.ui-menu
+{
+    overflow-y: scroll;
+    height:200px;
+    width:300px;
+    font-family: Arial;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    display: none;  
+    padding: 2px;
+    margin: 0px;
+    list-style: none;
+    background-color: #727176;
+    border-color: white;
+    color:white;    
+    border-style: solid;
+    border-width: 1px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    *border-right-width: 2px;
+    *border-bottom-width: 2px;
+}
+
+.ui-menu-item > a.ui-corner-all {
+  
+    padding: 3px 15px;
+    clear: both;
+    font-weight: normal;
+    line-height: 18px;
+    color: #555555;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.ui-state-hover, .ui-state-active {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #0088cc;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    background-image: none;
+}
+
+.ui-helper-hidden-accessible
+{
+    display:none;
+}
+
+
+.PCTarefas button
+{
+    width:300px;
+    height: 300px;
+}
+
+
+
+chips {
+    margin-top:5px;
+    margin-right:5px;
+    display: inline-block;
+    padding:3px 5px 3px 3px;
+    font-size: 14px;
+    line-height: auto;
+    border-radius: 10px;
+    background-color:orange;
+    color:white;
+    text-align:center;
+    width:auto +30px;
+    font-weight:normal;
+  }
+chips .closebtn {
+   padding-left:5px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 15px;
+    cursor: pointer;
+    text-align:center;
+    
+  }
+  
+chips .closebtn:hover {
+    color: #000;
+  }
+
+ 
+
+  .prescricaoPOP
+  {
+    margin-top:2%;
+    font-family:"Arial"; 
+    font-size:18px;
+    font-weight: bold;  
+    width:85%;
+    float:left; 
+    margin-bottom:2%;   
+
+  }
+
+  .prescricaoPOP select
+  {
+    height:28px;
+    width:90%;
+    font-size:16px;
+    background-color:#87afd3;
+    font-weight: normal;
+    margin-left:2%;
+
+  }
+
+  .DP
+  {
+    width:10%;
+    font-size:18px;
+    height:5%;
+    background-color: white;
+    text-align:center;
+    vertical-align: center;
+    border:1px solid black;
+    float:right;
+    margin-top:1%;
+    font-family: Arial;
+    margin-bottom:2%;
+    
+
+
+  }
+
+  .contentP
+  {
+    position: relative;
+    margin-left:18%;
+    margin-right:12%;
+    width:70%;
+    overflow-x:auto;
+  }
+
+
+  .referencia
+  {
+    margin-left:4%;
+    margin-top:2%;
+    font-family:"Arial"; 
+    font-size:16px;
+    font-weight: bold;  
+    width:100%;
+    float:left;
+    margin-bottom:1%;
+  }
+  .referencia input[type='text']
+  {
+    background-color:#87afd3;
+    font-size:14px;
+    font-family:"Arial";
+
+  }
+
+  .referencia input[type='button']
+  {
+    font-size:14px;
+    background-color:#3C61A5;
+    color:white;
+  }
+  .criarCodigo
+  {
+      float:right;
+  }
+
+  .criarCodigo input
+  {
+        float:right;
+        font-family:"Arial"; 
+        font-size:14px;
+        background-color:#3C61A5;
+        color:white;
+        width:200px;
+        margin-top:auto;
+        height:26px;
+  }
+
+  .Recomendacoes
+  {
+    font-family:"Arial"; 
+    font-size:18px;
+    font-weight: bold;
+   
+    
+  }
+
+  .tabelas{
+      overflow-y:scroll;
+      max-height:160px;
+  }
+  .Produtos
+  {
+    margin-top:3%;
+    font-family:"Arial"; 
+    font-size:18px;
+    font-weight: bold;
+  }
+
+#tablePreco
+{
+    width: 100%;
+    font-family: Arial;
+    font-size: 14px;
+    border-spacing: 0;
+}
+
+ #tableRP td{
+     padding-top: 5px;
+     padding-bottom: 5px;
+     text-align: center;
+     color: black;
+     background-color: white;
+     border:1px solid black;
+  
+ }
+
+#tableRP
+  {
+      width: 100%;
+      font-family: Arial;
+      font-size: 14px;
+      border-spacing: 0;
+     
+  }
+  
+ #tableRP th{
+     padding-top: 3px;
+     padding-bottom: 3px;
+      text-align: left;
+      color: white;
+      background-color: darkgrey;
+      border: 1px solid black;
+      text-align:center;
+      font-weight: normal;
+      
+  }
+
+  #tableRProdutos td{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border:1px solid black;
+ 
+}
+optgroup {
+  color:#E0E0E0;
+}
+
+#tableRProdutos
+ {
+     width: 100%;
+     font-family: Arial;
+     font-size: 14px;
+     border-spacing: 0;
+    
+ }
+ 
+#tableRProdutos th{
+    padding-top: 3px;
+    padding-bottom: 3px;
+     text-align: left;
+     color: white;
+     background-color: darkgrey;
+     border: 1px solid black;
+     text-align:center;
+     font-weight: normal;
+     
+ }
+  #tipoCima
+  {
+      width:10%;
+  }
+  #descricaoCima
+  {
+    width:25%;
+
+  }
+  #isoCima
+  {
+    width:10%;
+
+  }
+  #adaptacaoCima
+  {
+    width:10%;
+
+  }
+  #beneficiosCima
+  {
+    width:10%;
+
+  }
+  #requesitosCima
+  {
+    width:10%;
+
+  }
+  #scrollCima
+  {
+    width:5%;
+
+  }
+  #colmatacaoCimaR
+  {
+    width:10%;
+
+    padding-top: 3px;
+    padding-bottom: 3px;
+     text-align: left;
+     color: white;
+     background-color: darkgrey;
+     border: 1px solid black;
+     text-align:center;
+     font-weight: normal;
+  }
+
+  #precoCimaR
+  {
+    width:10%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+     text-align: left;
+     color: white;
+     background-color: darkgrey;
+     border: 1px solid black;
+     text-align:center;
+     font-weight: normal;
+  }
+  #colmatacaoCimaP
+  {
+    width:10%;
+
+    padding-top: 3px;
+    padding-bottom: 3px;
+     text-align: left;
+     color: white;
+     background-color: darkgrey;
+     border: 1px solid black;
+     text-align:center;
+     font-weight: normal;
+  }
+
+  #precoCimaP
+  {
+    width:10%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+     text-align: left;
+     color: white;
+     background-color: darkgrey;
+     border: 1px solid black;
+     text-align:center;
+     font-weight: normal;
+  }
+  #colTipoR
+  {
+    width:10%;
+  }
+  #colDescricaoR
+  {
+      width:25%;
+  }
+  #colIsoR
+  {
+    width:10%;
+
+  }
+  #colAdaptacaoR
+  {
+      width:10%;
+  }
+  #colBeneficiosR
+  {
+      width:10%;
+  }
+  #colColmatacaoR
+  {
+      width:10%;
+  }
+#colPrecoR
+{
+    width:10%;
+}
+#colRequisitosR
+{
+    width:10%;
+}
+#colScrollR
+{
+    width:5%;
+}
+#colTipoP
+  {
+    width:10%;
+  }
+  #colDescricaoP
+  {
+      width:25%;
+  }
+  #colIsoP
+  {
+    width:10%;
+
+  }
+  #colAdaptacaoP
+  {
+      width:10%;
+  }
+  #colBeneficiosP
+  {
+      width:10%;
+  }
+  #colColmatacaoP
+  {
+      width:10%;
+  }
+#colPrecoP
+{
+    width:10%;
+}
+#colRequisitosP
+{
+    width:10%;
+}
+#colScrollP
+{
+    width:5%;
+}
+
+.Informacoes
+  {
+    margin-top:3%;
+    font-family:"Arial"; 
+    font-size:18px;
+    font-weight: bold;
+
+  }
+
+.Add img
+{
+    height:18px;
+    margin-right:5px;
+}
+
+.Add
+{
+    font-family:"Arial"; 
+    font-size:12px;
+}
+.Add a
+{
+    display:block;
+    text-decoration: none;
+    color:black;
+    margin-top:1.5%;
+    font-family:Arial;
+}
+
+.Add a:hover{
+    color:#3C61A5;
+}
+
+.Imprimir input
+{
+    float:right;
+    font-size:14px;
+    background-color:#3C61A5;
+    color:white;
+    width:200px;
+    height:26px;
+    margin-bottom:1%
+}
+
+
+  
+/* Popup box BEGIN */
+.hover_bkgr_fricc{
+    display:none;
+    height:100%;
+    position:fixed;
+    text-align:left;
+    margin-left:15%;
+    margin-right:15%;
+    top:2%;
+    width:100%;
+    font-family: "Arial";
+    font-size: 18px;
+    font-weight: bold;
+  
+}
+
+.hover_bkgr_fricc img{
+    margin-right:16.5%;
+    height: 23px;
+    vertical-align:bottom;
+    
+}
+
+.dadosPop
+{
+    width:45%;
+    margin-top:1%;
+}
+
+.dadosPop select
+{
+    margin-top:2%;
+    height:24px;
+    width:100%;
+    font-size:16px;
+    background-color:#87afd3;
+    font-weight: normal;
+    color:white;
+}
+
+
+.dadosPop
+{
+    float:left;
+    width:45%;
+}
+.nomesPop
+{
+
+    float:left;
+    width:45%;
+    margin-top:1%;
+    margin-left:10%;
+    
+}
+
+.emailPop
+{
+    float:left;
+    width:45%;
+    margin-top:1%;
+
+}
+.contatoPop
+{
+    float:left;
+    width:45%;
+    margin-top:1%;
+    margin-left:10%;
+    
+}
+
+.nomesPop input[type='text'] 
+{
+    background-color:#87afd3;
+font-size:16px;
+font-family:"Arial";
+margin-top:2.8%;
+width:100%;
+
+}
+.contatoPop input[type='text'] 
+{background-color:#87afd3;
+font-size:16px;
+font-family:"Arial";
+margin-top:2.8%;
+width:100%;
+}
+
+.emailPop input[type='text'] 
+{background-color:#87afd3;
+font-size:16px;
+font-family:"Arial";
+margin-top:2.8%;
+width:100%;
+}
+
+
+
+.descricaoPop
+{
+    margin-top:2%;
+    float:left;
+    margin-left:0;
+    width:100%;
+ 
+}
+
+.urlPop
+{
+    margin-top:2%;
+    float:left;
+    margin-left:0;
+    width:100%;
+ 
+}
+
+
+.urlPop input[type='text'] 
+{background-color:#87afd3;
+font-size:16px;
+font-family:"Arial";
+margin-top:1%;
+width:100%;
+}
+
+.descricaoPop textarea
+{
+    background-color:#87afd3;
+    font-size:16px;
+    font-family:"Arial";
+    margin-top:1%;
+    width:100%;
+    height:100px;
+}
+.hover_bkgr_fricc .helper{
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+.hover_bkgr_fricc > div {
+    background:rgb(233,235,237);
+    -webkit-box-shadow: -1px 1px 5px 9px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 1px 5px 9px rgba(0,0,0,0.75);
+box-shadow: -1px 1px 5px 9px rgba(0,0,0,0.75);
+    display: inline-block;
+    height: auto;
+    vertical-align: middle;
+    width: 60%;
+    position: relative;
+    border-radius: 8px;
+    padding: 15px 5%;
+}
+
+
+.hover_bkgr_fricc input[type='button']{
+    float:right;
+    font-family:"Arial"; 
+    font-size:14px;
+    background-color:#3C61A5;
+    color:white;
+    width:150px;
+    height:26px;
+    margin-top:2%;
+
+}
+.popupCloseButton {
+    background-color: #fff;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.popupCloseButton:hover {
+    background-color: #ccc;
+}
+.trigger_popup_fricc {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+/* Popup box BEGIN */
+
+.palavrasChave
+{
+    margin-top:1%;
+    font-size:20px;
+    font-family:"Arial";
+    font-weight:bold;
+}
+
+.Forn
+{
+    font-family:"Arial";
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:22%;
+    
+}
+.Forn img
+{
+    margin-left:1%;
+    vertical-align:bottom;
+}
+
+
+.palavrasChave input[type='text']
+{
+    width:78%;
+    height:20px;
+    background-color:#87afd3;
+}
+.dadosForn
+{
+    display:block;
+}
+.forn
+{
+    margin-top:1%;
+    width:27%;
+    margin-right:5%;
+    float:left;
+    background-color:white;
+    text-align:center;
+    padding:1px 1px;
+    border:4px solid #87afd3;
+    font-size:18px;
+    font-weight: normal;
+}
+ 
+.loader
+{
+    display:none;
+}
+
+
+.confPat
+{
+    font-family:"Arial";
+    font-size:20px;
+    font-weight:bold;
+    margin-top:1%;
+}
+
+.tableConf
+{
+    width:100%;
+}
+
+.tabelaConf
+{
+    width:100%;
+}
+
+.tabelaConf
+{
+    
+        margin-top: 1%;
+        font-family: Arial;
+        font-size: 14px;
+        border-spacing: 0;
+        overflow-y: auto;
+
+}
+
+
+.tableConf table th{
+    padding-top: 3px;
+    padding-bottom: 3px;
+     text-align: left;
+     color: white;
+     background-color: darkgrey;
+     border: 1px solid black;
+     text-align:center;
+     font-weight: normal;
+     height:25px;
+ }
+ 
+ .tableConf table td{
+     padding-top: 10px;
+     padding-bottom: 10px;
+     text-align: left;
+     color: black;
+     background-color: white;
+     border:1px solid black;
+  
+ }
+
+ #conflixo
+ {
+     text-align:center;
+ }
+ .tableConf input[type='checkbox']
+ {
+     height:20px;
+ }
+
+ .confListaPop
+ {
+     font-family:"Arial";
+     font-size:20px;
+     font-weight:bold;
+     margin-top:2%;
+     
+ }
+
+.listaProc
+{
+    width:100%;
+}
+
+.tableCPOP
+{
+    width:100%;
+        margin-top: 1%;
+        font-family: Arial;
+        font-size: 14px;
+        border-spacing: 0;
+        overflow-y: auto;
+
+}
+
+.tableCPOP th{
+    padding-top: 3px;
+    padding-bottom: 3px;
+     text-align: left;
+     color: white;
+     background-color: darkgrey;
+     border: 1px solid black;
+     text-align:center;
+     font-weight: normal;
+     height:25px;
+ }
+ .tableCPOP td{
+     padding-top: 10px;
+     padding-bottom: 10px;
+     text-align: left;
+     color: black;
+     background-color: white;
+     border:1px solid black;
+     
+  
+ }
+
+ 
+ .tableCPOP  input[type='checkbox']
+ {
+     height:20px;
+ }
+
+ .tableCPOP input[type='button']
+ {
+
+    text-align:center;
+    font-family:"Arial"; 
+    font-size:14px;
+    background-color:#3C61A5;
+    color:white;
+   
+ }
+ #aceder
+ {
+     text-align:center;
+ }
+
+ .nomepop
+ {
+    font-family:"Arial";
+    font-size:20px;
+    font-weight:bold;
+    margin-top:2%;
+ }
+
+ .nomepop input[type='text']
+ {
+    background-color:#87afd3;
+    font-size:14px;
+    font-family:"Arial";
+    width:30%;
+ }
+
+ .descricaopop 
+ {
+    font-family:"Arial";
+    font-size:20px;
+    font-weight:bold;
+    margin-top:2%;
+ }
+
+ .descricaopop .areadescricao
+ {
+    background-color:#87afd3;
+    font-size:16px;
+    font-family:"Arial";
+    margin-top:1%;
+    width:99%;
+    height:70px;
+   
+ }
+
+ .palavraschave 
+ {
+    font-family:"Arial";
+    font-size:20px;
+    font-weight:bold;
+    margin-top:2%;
+ }
+
+ .tipoPatologia
+ {
+    font-family:"Arial";
+    font-size:20px;
+    font-weight:bold;
+    margin-top:2%;  
+ }
+
+ .tipoPatologia select
+ {
+    height:24px;
+    width:30%;
+    font-size:16px;
+    background-color:#87afd3;
+    font-weight: normal;
+    color:white;
+ }
+
+ .tipoPatologia img
+ {
+    height: 24px;
+    vertical-align:bottom;
+    margin-left:4px;
+ }
+
+ .dadospat
+{
+    width:100%;
+        margin-top: 1%;
+        font-family: Arial;
+        font-size: 14px;
+        border-spacing: 0;
+        overflow-y: auto;
+
+}
+
+.dadospat th{
+    padding-top: 3px;
+    padding-bottom: 3px;
+     text-align: left;
+     color: white;
+     background-color: darkgrey;
+     border: 1px solid black;
+     text-align:center;
+     font-weight: normal;
+     height:25px;
+}
+
+     .dadospat td{
+
+     text-align: left;
+     color: black;
+     background-color: white;
+     border:1px solid black;
+     
+  
+ }
+
+ .dadospat select{
+       width:100%;
+       height:100%;
+       font-size:16px;
+       background-color:#87afd3;
+       font-weight: normal;
+       color:white;
+ }
+
+ .dadospat input
+ {
+     border:none;
+     width:98%;
+     height:100%;
+ }
+
+ .dadospat img
+ {
+    height: 24px;
+    vertical-align:bottom;
+    margin-left:4px;
+    text-align:center;
+ }
+
+
+#lixopop
+ {
+     text-align:center;
+ }
+
+ #poppais
+ {
+     width:10%;
+}
+
+
+.dadossint
+{
+    float:left;
+    width:50%;
+}
+
+
+.dadostar
+{
+    float:left;
+    width:50%;
+}
+
+.tabdadosint
+{
+    width:97%;
+        margin-top: 1%;
+        font-family: Arial;
+        font-size: 14px;
+        border-spacing: 0;
+        overflow-y: auto;
+
+}
+
+.tabdadosint th{
+    padding-top: 3px;
+    padding-bottom: 3px;
+     text-align: left;
+     color: white;
+     background-color: darkgrey;
+     border: 1px solid black;
+     text-align:center;
+     font-weight: normal;
+     height:25px;
+}
+.tabdadosint td{
+
+     text-align: left;
+     color: black;
+     background-color: white;
+     border:1px solid black;
+     
+  
+ }
+
+ .tabdadostar {
+     width:100%;
+         margin-top: 1%;
+         font-family: Arial;
+         font-size: 14px;
+         border-spacing: 0;
+         overflow-y: auto;
+ 
+ }
+ 
+ .tabdadostar th{
+     padding-top: 3px;
+     padding-bottom: 3px;
+      text-align: left;
+      color: white;
+      background-color: darkgrey;
+      border: 1px solid black;
+      text-align:center;
+      font-weight: normal;
+      height:25px;
+ }
+ 
+ .tabdadostar td{
+ 
+      text-align: left;
+      color: black;
+      background-color: white;
+      border:1px solid black;
+      
+   
+  }
+
+
+  .dadostarsint img
+  {
+     height: 24px;
+     vertical-align:bottom;
+     margin-left:8px;
+  }
+
+  .dadostarsint
+  {
+    font-family: "Arial";
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 2%;
+
+  }
+
+  .dadostarsint select
+  {
+    height:24px;
+    width:50%;
+    font-size:16px;
+    background-color:#87afd3;
+    margin-left:5.5%;
+    font-weight: normal;
+    color:white;
+  }
+
+
+  .dadostarsint #acao
+  {
+      width:10%;
+  }
+
+  .dadostarsint input
+  {
+      width:98%;
+      height:100%;
+      border:none;
+  }
+
+  .poprecomendacoes img
+  {
+     height: 24px;
+     vertical-align:bottom;
+     margin-left:8px;
+  }
+
+
+  .poprecomendacoes
+  {
+    font-family: "Arial";
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15%;
+
+  }
+
+  .poprecomendacoes select
+  {
+    height:24px;
+    width:20%;
+    font-size:16px;
+    background-color:#87afd3;
+    margin-left:5.5%;
+    font-weight: normal;
+    color:white;
+  }
+  
+  .tabrec {
+    width:100%;
+        margin-top: 1%;
+        font-family: Arial;
+        font-size: 14px;
+        border-spacing: 0;
+        overflow-y: auto;
+
+}
+
+.tabrec th{
+    padding-top: 3px;
+    padding-bottom: 3px;
+     text-align: left;
+     color: white;
+     background-color: darkgrey;
+     border: 1px solid black;
+     text-align:center;
+     font-weight: normal;
+     height:25px;
+}
+
+.tabrec td{
+
+     text-align: left;
+     color: black;
+     background-color: white;
+     border:1px solid black;
+     
+ }
+
+ .tabrec input
+ {
+    width:98%;
+    height:100%;
+    border:none;
+ }
+
+ .tabrec select
+ {
+    width:100%;
+    height:100%;
+    font-size:16px;
+    background-color:#87afd3;
+    font-weight: normal;
+    color:white;
+    margin:0 0 0 0;
+ }
+
+ #RTipo
+ {
+     width:7%;
+ }
+
+
+ .poprodutos img
+ {
+    height: 24px;
+    vertical-align:bottom;
+    margin-left:8px;
+ }
+
+
+ .poprodutos
+ {
+   font-family: "Arial";
+   font-size: 20px;
+   font-weight: bold;
+   margin-top:1.5%;
+
+ }
+
+ .tabpro{
+    width:100%;
+        margin-top: 1%;
+        font-family: Arial;
+        font-size: 14px;
+        border-spacing: 0;
+        overflow-y: auto;
+
+}
+
+.tabpro th{
+    padding-top: 3px;
+    padding-bottom: 3px;
+     text-align: left;
+     color: white;
+     background-color: darkgrey;
+     border: 1px solid black;
+     text-align:center;
+     font-weight: normal;
+     height:25px;
+}
+
+.tabpro td{
+
+     text-align: left;
+     color: black;
+     background-color: white;
+     border:1px solid black;
+     
+ }
+
+ .tabpro input
+ {
+    width:98%;
+    height:100%;
+    border:none;
+ }
+ .tabpro select
+ {
+    width:100%;
+    height:100%;
+    font-size:16px;
+    background-color:#87afd3;
+    font-weight: normal;
+    color:white;
+    margin:0 0 0 0;
+ }
+
+
+ .totcolm
+ {
+     float:left;
+     width:50%;
+ }
+
+ .totcusto
+ {
+     float:left;
+     width:50%;
+ }
+
+.dadostot
+{
+    font-family: "Arial";
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:1.5%;
+}
+
+.dadostot input{
+    background:grey;
+    width:30%;
+    font-size:19px;
+}
+
+.upload
+{
+    font-family: "Arial";
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:5%;
+}
+
+.upload input
+{
+    margin-top:0.5%;
+    font-family: "Arial";
+    width:100%;
+    height:60px;
+    text-align:left;
+    vertical-align: top;
+    background-color:white;
+    border:2px solid #87afd3;
+
+}
+
+
+.listaficheiros 
+{
+    font-family: "Arial";
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:1%;
+}
+
+.ficheiros
+{
+    border-top:2px solid #87afd3;
+    margin-top:0.5%;
+    font-size:16px;
+    font-weight:normal;
+}
+
+.ficheiros img 
+{
+    margin-left:4px;
+    margin-top:0.5%;
+    height:16px;
+    text-align:bottom;
+}
+
+
+.publicar
+{
+    float:right;
+}
+
+.publicar input[type="button"]
+{
+    font-family:"Arial"; 
+    font-size:14px;
+    background-color:#3C61A5;
+    color:white;
+}
+
+.publicar input[type="date"]
+{
+    font-family:"Arial"; 
+    font-size:14px;
+    background-color:#87afd3;
+    color:white;
+    border:none;
+}
+
+.publicar
+{
+    font-family:"Arial"; 
+    font-size:14px;
+}
+
+.tableCPOP input[type='text']
+{
+    margin:none;
+    width:98%;
+    height:99%;
+    border:none;
+
+}
+
+.tabelaConf input[type='text']
+{
+    margin:none;
+    width:98%;
+    height:99%;
+    border:none;
+
+}
+
+#ConfAcao
+{
+    width:10%;
+}
+
+#tab7
+{
+    text-align:center;
+}
+
+
+@media screen and (max-width: 650px) {
+    .navbar a
+    {
+        font-size:4px;
+        padding-top:55%;
+    padding-bottom:25%;
+    }
+
+    .Patologia select
+    {
+        width:40%
+    }
+    .navbar
+    {
+        width:8%;
+    }
+
+    .DP
+    {
+        height:3%;
+        font-size:12px;
+
+    }
+
+    .forn
+    {
+        width:40%;
+    }
+
+    .POP table #Scroll
+    {
+        min-width:40px;
+        width:20%
+    }
+
+    .referencia input[type='text']
+    {
+        width:35%;
+    }
+
+    #dados
+    {
+        overflow-x:auto;
+    }
+
+    .tabelaPatologia table
+    {
+        overflow-x:auto;
+    }
+
+    #Confirmar
+    {
+        width:40px;
+    }
+
+    .tabelaPatologia img
+    {
+        width:60%;
+    }
+
+    #dados input
+    {
+        width:20px;
+    }
+
+    #dados input[type="date"]
+    {
+        width:50px;
+    }
+
+    #DP
+    {
+        vertical-align:bottom;
+        margin-top:4.5%;
+    }
+
+    .dadosPop
+    {
+        width:100%;
+    }
+
+    .nomesPop
+    {
+        margin-left:0%;
+        width:100%;
+    }
+
+    .emailPop
+    {
+        width:100%;
+       
+    }
+    .contatoPop
+    {
+        margin-left:0%;
+        width:100%;
+    }
+  
+    
+    
+  }
